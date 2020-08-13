@@ -14,7 +14,8 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         
         setupTabBar()
-
+        configuareNavigation()
+        
     }
     
     fileprivate func createSearchNC() -> UINavigationController {
@@ -35,6 +36,11 @@ class MainTabBarController: UITabBarController {
         tabBar.tintColor = .systemGreen
         viewControllers = [createSearchNC(),
                            createFavoritesListNC()]
+    }
+    
+    // navigation appearance
+    fileprivate func configuareNavigation(){
+        UINavigationBar.appearance().tintColor = .systemGreen
     }
     
 
