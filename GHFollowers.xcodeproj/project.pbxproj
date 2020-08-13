@@ -17,6 +17,7 @@
 		24C9548324E56CBB002718FA /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9548224E56CBB002718FA /* Follower.swift */; };
 		24C9548524E56CE4002718FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9548424E56CE4002718FA /* User.swift */; };
 		24C9548824E57712002718FA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9548724E57712002718FA /* NetworkManager.swift */; };
+		24C9548B24E5946C002718FA /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9548A24E5946C002718FA /* ErrorMessage.swift */; };
 		24D9F9B924C9D37A00163F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9F9B824C9D37A00163F90 /* AppDelegate.swift */; };
 		24D9F9BB24C9D37A00163F90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9F9BA24C9D37A00163F90 /* SceneDelegate.swift */; };
 		24D9F9BD24C9D37A00163F90 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9F9BC24C9D37A00163F90 /* SearchVC.swift */; };
@@ -37,6 +38,7 @@
 		24C9548224E56CBB002718FA /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		24C9548424E56CE4002718FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		24C9548724E57712002718FA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		24C9548A24E5946C002718FA /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		24D9F9B524C9D37A00163F90 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D9F9B824C9D37A00163F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D9F9BA24C9D37A00163F90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		24C9548924E59456002718FA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				24C9548A24E5946C002718FA /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		24D9F9AC24C9D37A00163F90 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +148,7 @@
 		24D9F9B724C9D37A00163F90 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				24C9548924E59456002718FA /* Utilities */,
 				24C9548624E576E3002718FA /* Managers */,
 				24C9548124E56CAB002718FA /* Model */,
 				24C9547D24E558FF002718FA /* Extentions */,
@@ -230,6 +241,7 @@
 				24D9F9FA24CB3D1800163F90 /* MainTabBarController.swift in Sources */,
 				24D9F9B924C9D37A00163F90 /* AppDelegate.swift in Sources */,
 				24D9F9BB24C9D37A00163F90 /* SceneDelegate.swift in Sources */,
+				24C9548B24E5946C002718FA /* ErrorMessage.swift in Sources */,
 				24C9548824E57712002718FA /* NetworkManager.swift in Sources */,
 				24C726DF24D03D330090403B /* GFTextField.swift in Sources */,
 				24C9547624E539DD002718FA /* GFBodyLabel.swift in Sources */,
