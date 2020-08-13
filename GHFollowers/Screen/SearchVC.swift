@@ -41,7 +41,7 @@ class SearchVC: UIViewController {
     
     @objc fileprivate func pushFollowerListVC(){
         guard isUsernameEnterd else {
-            self.presentAlertVCOnMainThread(title: "Empty username",
+            self.presentAlertOnMainThread(title: "Empty username",
                                             message: "Please, enter a username. we need to know who to look for😀",
                                             buttonTitle: "Ok")
             return

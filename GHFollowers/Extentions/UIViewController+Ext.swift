@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-    func presentAlertVCOnMainThread(title: String, message: String, buttonTitle: String){
+    func presentAlertOnMainThread(title: String, message: String, buttonTitle: String){
         DispatchQueue.main.async {
             let aletVC                      = GFAlertVC(alertTitle: title, message: message, buttonTitle: buttonTitle)
             aletVC.modalPresentationStyle   = .overFullScreen
