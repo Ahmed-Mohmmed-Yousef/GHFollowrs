@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GHFollowers
 //
-//  Created by Ahmed on 8/13/20.
+//  Created by Ahmed on 8/15/20.
 //  Copyright © 2020 Ahmed,ORG. All rights reserved.
 //
 
