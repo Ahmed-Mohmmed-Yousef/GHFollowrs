@@ -28,6 +28,8 @@
 		24C954A724E88C8B002718FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C954A624E88C8B002718FA /* Constants.swift */; };
 		24C954A924E93B20002718FA /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C954A824E93B20002718FA /* GFItemInfoView.swift */; };
 		24C954AB24E94CA8002718FA /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C954AA24E94CA8002718FA /* GFItemInfoVC.swift */; };
+		24C954AD24EA8267002718FA /* GFRRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C954AC24EA8267002718FA /* GFRRepoItemVC.swift */; };
+		24C954AF24EA8424002718FA /* GFFolloweItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C954AE24EA8424002718FA /* GFFolloweItemVC.swift */; };
 		24D9F9B924C9D37A00163F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9F9B824C9D37A00163F90 /* AppDelegate.swift */; };
 		24D9F9BB24C9D37A00163F90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9F9BA24C9D37A00163F90 /* SceneDelegate.swift */; };
 		24D9F9BD24C9D37A00163F90 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9F9BC24C9D37A00163F90 /* SearchVC.swift */; };
@@ -59,6 +61,8 @@
 		24C954A624E88C8B002718FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		24C954A824E93B20002718FA /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		24C954AA24E94CA8002718FA /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
+		24C954AC24EA8267002718FA /* GFRRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRRepoItemVC.swift; sourceTree = "<group>"; };
+		24C954AE24EA8424002718FA /* GFFolloweItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFolloweItemVC.swift; sourceTree = "<group>"; };
 		24D9F9B524C9D37A00163F90 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D9F9B824C9D37A00163F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D9F9BA24C9D37A00163F90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,9 +196,9 @@
 		24C9549924E7E9B3002718FA /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				24C954B024EA8485002718FA /* ItemInfoVCs */,
 				24C9547724E53D3A002718FA /* GFAlertVC.swift */,
 				24C954A224E860AA002718FA /* GFUserInfoHeaderVC.swift */,
-				24C954AA24E94CA8002718FA /* GFItemInfoVC.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -213,6 +217,16 @@
 				24C726DE24D03D330090403B /* GFTextField.swift */,
 			);
 			path = UITextField;
+			sourceTree = "<group>";
+		};
+		24C954B024EA8485002718FA /* ItemInfoVCs */ = {
+			isa = PBXGroup;
+			children = (
+				24C954AA24E94CA8002718FA /* GFItemInfoVC.swift */,
+				24C954AC24EA8267002718FA /* GFRRepoItemVC.swift */,
+				24C954AE24EA8424002718FA /* GFFolloweItemVC.swift */,
+			);
+			path = ItemInfoVCs;
 			sourceTree = "<group>";
 		};
 		24D9F9AC24C9D37A00163F90 = {
@@ -319,6 +333,7 @@
 				24D9F9F824CB3CBC00163F90 /* FavoritesListVC.swift in Sources */,
 				24C9547A24E5465E002718FA /* UIViewController+Ext.swift in Sources */,
 				24C954A324E860AA002718FA /* GFUserInfoHeaderVC.swift in Sources */,
+				24C954AD24EA8267002718FA /* GFRRepoItemVC.swift in Sources */,
 				24D9F9BD24C9D37A00163F90 /* SearchVC.swift in Sources */,
 				24C726DD24D02B8C0090403B /* GFButton.swift in Sources */,
 				24C9549D24E7EA36002718FA /* GFEmptyStateView.swift in Sources */,
@@ -339,6 +354,7 @@
 				24C9548824E57712002718FA /* NetworkManager.swift in Sources */,
 				24C726DF24D03D330090403B /* GFTextField.swift in Sources */,
 				24C954A924E93B20002718FA /* GFItemInfoView.swift in Sources */,
+				24C954AF24EA8424002718FA /* GFFolloweItemVC.swift in Sources */,
 				24C9547624E539DD002718FA /* GFBodyLabel.swift in Sources */,
 				24C954A724E88C8B002718FA /* Constants.swift in Sources */,
 			);
