@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2448B69E24EBA0F100119946 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448B69D24EBA0F100119946 /* PersistenceManager.swift */; };
+		2491BBB224ED264B0085B389 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2491BBB124ED264B0085B389 /* FavoriteCell.swift */; };
 		24C726DD24D02B8C0090403B /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C726DC24D02B8C0090403B /* GFButton.swift */; };
 		24C726DF24D03D330090403B /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C726DE24D03D330090403B /* GFTextField.swift */; };
 		24C9547124E4843D002718FA /* FolloweListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9547024E4843D002718FA /* FolloweListVC.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		2448B69D24EBA0F100119946 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		2491BBB124ED264B0085B389 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		24C726DC24D02B8C0090403B /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		24C726DE24D03D330090403B /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		24C9547024E4843D002718FA /* FolloweListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolloweListVC.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				24C9548D24E59CD7002718FA /* FollowerCell.swift */,
+				2491BBB124ED264B0085B389 /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				24C9548524E56CE4002718FA /* User.swift in Sources */,
 				24C954A124E8404B002718FA /* GFError.swift in Sources */,
 				2448B69E24EBA0F100119946 /* PersistenceManager.swift in Sources */,
+				2491BBB224ED264B0085B389 /* FavoriteCell.swift in Sources */,
 				24C9548E24E59CD7002718FA /* FollowerCell.swift in Sources */,
 				24C9549024E59D59002718FA /* GFAvatarImageView.swift in Sources */,
 				24C9547824E53D3A002718FA /* GFAlertVC.swift in Sources */,
