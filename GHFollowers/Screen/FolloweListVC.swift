@@ -140,7 +140,26 @@ extension FolloweListVC: UICollectionViewDelegate {
     }
     
     @objc func addButtonTapped(){
-        print("Add")
+        showLodingView()
+        NetworkManager.shared.getUserInfo(for: username) {[weak self] (result) in
+            guard let self = self else { return }
+            self.dismissLoadingView()
+            
+            switch result {
+                
+            case .success(let user):
+                let favorite = Follower(login: user.login, avatarUrl: user.avatarUrl)
+                PersistenceManager.update(favorite: favorite, actionType: .add) { (error) in
+                    if let error = error {
+                        self.presentAlertOnMainThread(title: "Somthing went wrong", message: error.rawValue, buttonTitle: "Ok")
+                    } else {
+                        self.presentAlertOnMainThread(title: "Success!", message: "You have successfully favorited this user 🙂.", buttonTitle: "Ok")
+                    }
+                }
+            case .failure(let error):
+                self.presentAlertOnMainThread(title: "Somthing went wrong", message: error.rawValue, buttonTitle: "Ok")
+            }
+        }
     }
 }
 
