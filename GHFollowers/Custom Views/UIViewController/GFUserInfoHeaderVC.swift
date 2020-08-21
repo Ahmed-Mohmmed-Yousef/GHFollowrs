@@ -38,7 +38,10 @@ class GFUserInfoHeaderVC: UIViewController {
     }
     
     private func configureUIElement(){
-        avatarImageView.downloadImage(from: user.avatarUrl)
+        NetworkManager.shared.downloadImage(from: user.avatarUrl) {[weak self] (image) in
+            guard let self = self else { return}
+            DispatchQueue.main.async { self.avatarImageView.image = image }
+        }
         usernameLabel.text      = user.login
         nameLabel.text          = user.name ?? ""
         locationLabel.text      = user.location ?? "No location"

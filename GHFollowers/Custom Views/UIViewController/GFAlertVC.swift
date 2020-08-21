@@ -10,10 +10,10 @@ import UIKit
 
 class GFAlertVC: UIViewController {
 
-    private let containerView = UIView()
-    private let titleLable = GFTitleLable(textAlignment: .center, fontSize: 20)
-    private let messageLable = GFBodyLabel(textAlignment: .center)
-    private let actionButton = GFButton(backgroundColor: .systemPink, title: "Ok")
+    private let containerView   = GFAlertContainerView()
+    private let titleLable      = GFTitleLable(textAlignment: .center, fontSize: 20)
+    private let messageLable    = GFBodyLabel(textAlignment: .center)
+    private let actionButton    = GFButton(backgroundColor: .systemPink, title: "Ok")
     
     var alertTitle: String?
     var message: String?
@@ -43,12 +43,6 @@ class GFAlertVC: UIViewController {
 
     fileprivate func configureContanierView(){
         view.addSubview(containerView)
-        containerView.backgroundColor       = .systemBackground
-        containerView.layer.cornerRadius    = 16
-        containerView.layer.borderWidth     = 2
-        containerView.layer.borderColor     = UIColor.white.cgColor
-        containerView.translatesAutoresizingMaskIntoConstraints = false
-        
         NSLayoutConstraint.activate([
             containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
